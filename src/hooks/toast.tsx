@@ -5,9 +5,9 @@ import ToastContainer from '../components/ToastContainer';
 
 export interface ToastMessage {
   id: string;
-  type: 'success' | 'error' | 'info';
+  type?: 'success' | 'error' | 'info';
   title: string;
-  description: string;
+  description?: string;
 }
 
 interface ToastContextData {
@@ -36,7 +36,7 @@ const ToastProvider: React.FC = ({ children }) => {
     [messages],
   );
   const removeToast = useCallback((id: string) => {
-    setMessages((state) => state.filter((message) => message.id !== id));
+    setMessages(state => state.filter(message => message.id !== id));
   }, []);
 
   return (

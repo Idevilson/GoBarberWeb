@@ -29,6 +29,13 @@
         "@typescript-eslint"
     ],
     "rules": {
+      "indent": "off",
+      "function-paren-newline":"off",
+      "implicit-arrow-linebreak": "off",
+      "no-redeclare": "off",
+      "arrow-parens":"off",
+      "camelcase": "off",
+      "arrow-body-style": "off",
       "no-unused-expressions":"off",
       "object-curly-newline":"off",
       "no-use-before-define": "off",
